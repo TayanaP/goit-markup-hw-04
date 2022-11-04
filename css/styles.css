@@ -222,7 +222,8 @@ margin-left: 50px;
 }
 
 .images-title, 
-.team-title{
+.team-title,
+.company-title{
     margin-bottom: 50px;
     text-align: center;
 
@@ -269,13 +270,18 @@ margin-left: 50px;
     margin-bottom: 30px;
     padding: 25px 100px;
 }
-   
+  
 
  .icon{
     align-items: center;
-    color: #212121;
-   
+    fill: var(--title-text-color);
 }
+
+.icon:hover,
+.icon:focus{
+    fill: var(--text-accent)
+}
+
 
 .images .list, 
 .team .list{
@@ -283,9 +289,38 @@ margin-left: 50px;
     gap: 30px;
 }
 
+.company .list{
+    gap: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 16px 32px;
+}
+   
+.company .logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    border: 1px solid #AFB1B8;
+    width: 170px;
+    height: 92px;  
+}
+
+.company .icon{
+    fill: #AFB1B8;
+}
+
+.company .icon:hover,
+.company .icon:focus{
+    fill: var(--text-accent)
+}
+
 .box .list {
-width: 370px;
-margin-right: 30px;
+    width: 370px;
+    margin-right: 30px;
 }
 
 .team{
@@ -331,12 +366,45 @@ margin-right: 30px;
     border-radius: 50%;
     width: 44px;
     height: 44px;   
-    background: #FFFFFF;
-    
+    background: #FFFFFF;    
+}
+
+.social:hover,
+.social:focus{
+    background: var(--text-accent);
 }
 
 .social .icon{
     fill: #AFB1B8;
+}
+
+.social .icon:hover,
+.social .icon:focus{
+    fill: #FFFFFF;
+}
+
+.footer-social{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;   
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.footer-social:hover,
+.footer-social:focus{
+    background: var(--text-accent);
+}
+
+.footer-social .icon{
+    fill: #FFFFFF;
+}
+
+.footer-social .icon:hover,
+.footer-social .icon:focus{
+    fill: #FFFFFF;
 }
 
 
@@ -348,6 +416,10 @@ margin-right: 30px;
     padding-bottom: 60px;
   
     background: #2F303A;
+}
+
+.footer .container{
+    display: flex;
 }
 
 .footer-logo{
@@ -400,6 +472,26 @@ margin-right: 30px;
 .footer-address .item{
     margin-top: 9px;
 }
+
+.footer-title{
+    margin-bottom: 20px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    }
+
+.navigation{
+    gap: 10px;
+    align-items: center;
+    display: inline-block;
+    justify-content: center;
+    margin-left: 70px;
+  
+}
 /* Portfolio */
 
 .list-button{
@@ -430,7 +522,8 @@ margin-right: 30px;
 .list-button .link:hover,
 .list-button .link:focus{
     background: var(--text-accent);
-    color: #FFFFFF;;
+    color: #FFFFFF;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .project-list{
@@ -441,6 +534,10 @@ margin-right: 30px;
 
 .element{
     flex-basis: calc((100% - 60px) / 3);    
+}
+
+.element:hover{
+    box-shadow: 0px 1px 1px rgb(0 0 0 / 12%), 0px 4px 4px rgb(0 0 0 / 6%), 1px 4px 6px rgb(0 0 0 / 16%);
 }
 
 .portfolio-title{
