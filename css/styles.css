@@ -277,45 +277,16 @@ margin-left: 50px;
     fill: var(--title-text-color);
 }
 
-.icon:hover,
+/* .icon:hover,
 .icon:focus{
     fill: var(--text-accent)
-}
+} */
 
 
 .images .list, 
 .team .list{
     display: flex;
     gap: 30px;
-}
-
-.company .list{
-    gap: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: auto;
-    margin-left: auto;
-    padding: 16px 32px;
-}
-   
-.company .logo{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 4px;
-    border: 1px solid #AFB1B8;
-    width: 170px;
-    height: 92px;  
-}
-
-.company .icon{
-    fill: #AFB1B8;
-}
-
-.company .icon:hover,
-.company .icon:focus{
-    fill: var(--text-accent)
 }
 
 .box .list {
@@ -359,19 +330,19 @@ margin-left: 50px;
     gap: 10px;
 }
 
-.social{
+.social .link{
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    width: 44px;
-    height: 44px;   
-    background: #FFFFFF;    
+    padding: 12px; 
+    background: #FFFFFF;
 }
 
-.social:hover,
-.social:focus{
+.social .link:hover,
+.social .link:focus{
     background: var(--text-accent);
+   
 }
 
 .social .icon{
@@ -383,31 +354,35 @@ margin-left: 50px;
     fill: #FFFFFF;
 }
 
-.footer-social{
+.company .list{
+    gap: 30px;
     display: flex;
-    align-items: center;
     justify-content: center;
-    border-radius: 50%;
-    width: 44px;
-    height: 44px;   
-    background: rgba(255, 255, 255, 0.1);
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 16px 32px;
+}
+   
+.company .logo .link{
+    display: flex;
+    border-radius: 4px;
+    border: 1px solid #AFB1B8;
+    padding: 16px 32px;
 }
 
-.footer-social:hover,
-.footer-social:focus{
-    background: var(--text-accent);
+.company .icon{
+    fill: #AFB1B8;
 }
 
-.footer-social .icon{
-    fill: #FFFFFF;
+.company .icon:hover,
+.company .icon:focus{
+    fill: var(--text-accent)
 }
 
-.footer-social .icon:hover,
-.footer-social .icon:focus{
-    fill: #FFFFFF;
+.logo .link{
+    display: flex;
 }
-
-
 
 /* Footer */
 
@@ -490,8 +465,26 @@ margin-left: 50px;
     display: inline-block;
     justify-content: center;
     margin-left: 70px;
-  
 }
+
+.footer-social .link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    padding: 12px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.footer-social .link:hover,
+.footer-social .link:focus{
+    background: var(--text-accent);
+}
+
+.footer-social .icon{
+    fill: #FFFFFF;
+}
+
 /* Portfolio */
 
 .list-button{
